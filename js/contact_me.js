@@ -23,6 +23,7 @@ $(function() {
             //url: "././mail/contact_me.php",
             $.ajax({
                 url: "//formspree.io/sonia@k7e.co",
+                cache: false,
                 type: "POST",
                 data: {
                     name: name,
@@ -31,7 +32,6 @@ $(function() {
                     message: message
                 },
                 dataType: "json",
-                cache: false,
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
