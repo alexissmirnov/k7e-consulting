@@ -19,8 +19,10 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            
+            //url: "././mail/contact_me.php",
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "//formspree.io/sonia@k7e.co",
                 type: "POST",
                 data: {
                     name: name,
