@@ -29,9 +29,8 @@ $(function() {
                     phone: phone,
                     email: email,
                     message: message
-                dataType: "json"
-
                 },
+                dataType: "json"
                 cache: false,
                 success: function() {
                     // Success message
