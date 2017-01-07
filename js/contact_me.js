@@ -2,7 +2,7 @@
 
 $(function() {
 
-    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+    $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
@@ -32,6 +32,8 @@ $(function() {
                 dataType: "json"
 
                 },
+
+                
                 cache: false,
                 success: function() {
                     // Success message
